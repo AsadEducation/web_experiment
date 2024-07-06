@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>School Admission Form</title>
+    <style>
+
+        header{
+            text-align: center;
+            text-transform: uppercase;
+            font-family: 'Courier New', Courier, monospace;
+        }
+
+        label{
+            width: 300px;
+            display:inline-block;
+            margin-bottom: 20px;
+            text-indent: 100 px;
+        }
+
+    </style>
+
+</head>
+<body>
+    <header> 
+        <!-- navigation will be in header container -->
+         <nav>
+            <ul>
+                <li><a href="media.html">Media</a></li>
+                <li><a href="../index.html">Index</a></li>
+                <li><a href="structure.html">structure</a></li>
+
+            </ul>
+         </nav>
+    </header>
+
+    <main>
+
+        <header>
+            <h1>Nasirabad High School Admission</h1>
+            <h2>Fill Up The Form</h2>
+        </header>
+
+        <section>
+            <form>
+                <!-- Using label because we don't want to write text beside input box manually
+                -->
+                <label for="Name">Name :
+                    <input id="Name" type="text"  placeholder="Please Write Your Name" >
+                </label>
+                <label for="phone">Phone Number :
+                    <input type="number" name="" placeholder="Type Your Phone" id="phone">
+                </label>
+                <label for="father">Father's Name : 
+                    <input type="text" id="father" placeholder="Your Father's Name">
+                </label>
+
+                <fieldset>
+                    <legend>Please Select Your Shift</legend>
+                    <!-- used for caption in a fieldset  -->
+
+                    <!-- if the name is same in input we can select just only one -->
+
+                    <label for="Morning">
+                        <input type="radio" name="Shift" id="Morning">Morning
+                    </label>
+                    <label for="Evening">
+                        <input type="radio" name="Shift" id="Evening">Evening
+                    </label>
+                    <label for="Night">
+                        <input type="radio" name="Shift" id="Night">Night
+                    </label>
+                </fieldset>
+
+                <fieldset>
+                    <legend> Please Select Your Hobby</legend>
+
+                    <label for="football">
+                        <input type="checkbox" name="game" id="football">football
+                    </label>
+                    <label for="cricket">
+                        <input type="checkbox" name="game" id="cricket">cricket
+                    </label>
+                    <label for="swimming">
+                        <input type="checkbox" name="game" id="swimming">swimming
+                    </label>
+                </fieldset>
+
+                <label for="reset">Wish:
+                    <input type="reset" value="Clear All">
+                </label>
+                
+            </form>
+        </section>
+
+    </main>
+
+    <footer>
+
+
+    </footer>
+    
+</body>
+</html>
