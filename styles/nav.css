@@ -1,9 +1,20 @@
 nav>ul{
-    display: inline-flex;
+    display: flex;
 }
 
 /* এটার মাধ্যমে আমি বলে দিতে পারব নেভ এর ভিতরের লিস্ট আইটেম এ স্টাইল কর */
 
 nav li{
-   
+   list-style: none;
+   margin-right: 10px;
+   padding:5px;
+}
+
+nav li a{
+    text-decoration: none;
+    color:black;
+}
+
+nav li:hover{
+    background-color: rebeccapurple;
 }
