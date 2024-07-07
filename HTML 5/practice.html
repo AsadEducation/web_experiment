@@ -16,8 +16,15 @@
             display: block;
             margin-bottom: 25px;
         }
-        #tarea{
-           margin-bottom: 10px;
+
+        #tarea {
+            margin-bottom: 10px;
+        }
+
+        form h1 {
+            text-align: center;
+            font-weight: bold;
+            font-family: 'Courier New', Courier, monospace;
         }
     </style>
 </head>
@@ -48,31 +55,75 @@
         <hr>
 
         <form action="">
-          
-           <label for="feedback">Feedback Form:
 
-           </label>
+            <label for="feedback">Feedback Form:
 
-           <label for="name">Name:
-            <br>
-            <input type="text">
-           </label>
+            </label>
 
-           <label for="date">Date:
-            <br>
-            <input type="date" name="" id="date">
-           </label>
+            <label for="name">Name:
+                <br>
+                <input type="text">
+            </label>
 
-           <label for="comment">Comment:
-            <br>
-             <textarea name="" id="tarea" rows="5" cols="50">
-                
+            <label for="date">Date:
+                <br>
+                <input type="date" name="" id="date">
+            </label>
+
+            <label for="comment">Comment:
+                <br>
+                <textarea name="" id="tarea" rows="5" cols="50">
+
              </textarea>
-           </label>
+            </label>
 
-           <label for="submit">
-             <input type="submit" value="SUBMIT">
-           </label>
+            <label for="submit">
+                <input type="submit" value="SUBMIT">
+            </label>
+
+        </form>
+
+        <hr>
+
+        <form action="">
+            <h1>Story Telling Feedback</h1>
+
+            <label for="catagory">
+                <caption>Catagory of your story:</caption>
+                <select name="" id="">
+                    <option value="">Romantic</option>
+                    <option value="">Tragedy</option>
+                    <option value="">Action</option>
+                    <option value="">Fiction</option>
+                    <option value="">Adventure</option>
+                </select>
+            </label>
+
+
+            <label for="textarea" class="story">Your Story:
+                <br> <br>
+                <textarea placeholder="Share Your Story" "story" id="" rows="10" cols="50">
+                </textarea>
+            </label>
+
+
+            <label for="submit">
+                <input type="submit" value="SUBMIT">
+            </label>
+
+            <label for="">
+                <caption>Rate the story:</caption>
+                <select name="" id="">
+                    <option value="Good">Good</option>
+                    <option value="Very Good">Very Good</option>
+                    <option value="">Excellent</option>
+                    <option value="">Superv</option>
+                </select>
+            </label>
+
+
+
+
 
         </form>
 
