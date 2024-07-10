@@ -1,8 +1,164 @@
+.open-sans-normal {
+    font-family: "Open Sans", sans-serif;
+    font-optical-sizing: auto;
+    font-style: normal;
+    font-variation-settings:
+        "wdth" 100;
+}
+
+/* coloring the 'r ' in marry */
+
+/* defining color of dark */
+
+
+/* *{
+    margin:0px;
+    padding:0px;
+} */
 
 
 
+/* shared styles */
 
 
-nav{
+.dark2 {
+    color: #474747;
+}
+
+.dark1 {
+    color: #181818;
+}
+
+.dark3 {
+    color: #757575;
+}
+
+.second_title {
+    font-size: 35px;
+    font-weight: bold;
+    color: #181818;
+}
+
+.section_description {
+    font-size: 18px;
+    color: #757575;
+}
+
+.section_bg {
+    background-color: #FFF8F3;
+}
+
+
+/* /////////////////////////////////// */
+
+.rong {
+    color: #FD6E0A;
+}
+
+nav {
     display: flex;
+    /* border: 3px solid red; */
+    align-items: center;
+    justify-content: space-between;
+    margin: 25px 150px;
+}
+
+
+/* title of nav  */
+
+nav>.title {
+    font-weight: 800;
+    font-size: 45px;
+}
+
+nav ul li {
+    list-style: none;
+}
+
+nav li a {
+    text-decoration: none;
+    font-size: 20px;
+    margin-right: 50px;
+}
+
+nav ul {
+    display: flex;
+    align-items: center;
+    /* gap: 50px; */
+}
+
+.btn {
+    background-color: #FD6E0A;
+    font-size: 20px;
+    font-weight: bold;
+    border-radius: 5px;
+    padding: 18px 36px;
+    color: #FFFFFF;
+    border: none;
+}
+
+
+/* banner styles  */
+/* banner styles  */
+
+.banner {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 0 35px 0 150px;
+}
+
+.banner_content {
+    max-width: 585px;
+}
+
+.banner_content .first_title {
+    font-size: 45px;
+    font-weight: 600;
+}
+
+.banner_content .second_title {
+    font-weight: bold;
+    font-size: 85px;
+}
+
+/* .banner_content .description {
+    font-size: 18px;
+} */
+
+image {
+    width: fit-content;
+}
+
+/* header styles */
+
+.header {
+    background-image: url("/images/developer.png"), url("/images/header_bg.png");
+    background-repeat: no-repeat;
+    background-position: top left, bottom right;
+    /* very-important */
+}
+
+
+/* main styles */
+
+main {
+    max-width: 1140px;
+    
+    margin: 0 auto;
+
+    /* dui side e margin auto set hobe device width er upor base kore */
+    
+    /* border: 2px solid red; */
+   
+
+}
+
+/* about styles */
+
+.about {
+    border-radius: 10px;
+    padding: 130px, 150px;
+    margin-top: 130px;
+
 }
