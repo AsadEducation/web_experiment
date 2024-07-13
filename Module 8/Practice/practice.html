@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>practice</title>
+    <style>
+
+        /* *{
+            margin:0;
+            padding: 0;
+        } */
+        .container{
+          /* border: 3px solid red; */
+          display: flex;
+          gap:20px;
+          height:98vh;
+        }
+        .element1 ,.element2{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            border-radius: 8px;
+        }
+
+        .element1{
+            width:30vw;
+            background-color:rgb(194, 146, 194);
+            /* border:none; */
+
+        }
+
+        .element2{
+            width:70vw;
+            background-color: rgb(228, 200, 167);
+        }
+
+        @media screen and (max-width:576px) {
+            .container{
+                flex-direction: column;
+            }
+            .element1{
+                height:30vh;
+                width: 100%;
+
+            }
+
+            .element2{
+                height:70vh;
+                width:100%;
+            }
+            
+        }
+
+
+
+    </style>
+</head>
+<body>
+
+    <div class="container">
+        <div class="element1">
+            <h1>Left</h1>
+        </div>
+        <div class="element2">
+           <h1>Right</h1>
+        </div>
+    </div>
+    
+</body>
+</html>
