@@ -1,61 +1,52 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>practice</title>
     <style>
+        .container {
+            /* border: 3px solid red; */
 
-        /* *{
-            margin:0;
-            padding: 0;
-        } */
-        .container{
-          /* border: 3px solid red; */
-          display: flex;
-          gap:20px;
-          height:98vh;
+            height: 98vh;
+            display: grid;
+            grid-template-columns: 1fr 3fr;
         }
-        .element1 ,.element2{
+
+        .element1,
+        .element2 {
             display: flex;
             justify-content: center;
             align-items: center;
-            border-radius: 8px;
+            border-radius: 10px;
         }
 
-        .element1{
-            width:30vw;
-            background-color:rgb(194, 146, 194);
-            /* border:none; */
-
+        .element1 {
+            background-color: blueviolet;
         }
 
-        .element2{
-            width:70vw;
-            background-color: rgb(228, 200, 167);
+        .element2 {
+            background-color: peru;
         }
 
         @media screen and (max-width:576px) {
-            .container{
-                flex-direction: column;
-            }
-            .element1{
-                height:30vh;
-                width: 100%;
-
+            .container {
+                grid-template-columns: repeat(1, 1fr);
             }
 
-            .element2{
-                height:70vh;
-                width:100%;
+            .element1 {
+               height: 30vh;
             }
-            
+
+            .element2 {
+                height: 70vh;
+            }
+
         }
-
-
-
     </style>
 </head>
+
 <body>
 
     <div class="container">
@@ -63,9 +54,10 @@
             <h1>Left</h1>
         </div>
         <div class="element2">
-           <h1>Right</h1>
+            <h1>Right</h1>
         </div>
     </div>
-    
+
 </body>
+
 </html>
