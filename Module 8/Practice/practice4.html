@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+<!-- <!DOCTYPE html>
 <html lang="en">
 
 <head>
@@ -7,50 +7,45 @@
     <title>Design Layout</title>
 
     <style>
-
-        .container{
+        .container {
             height: 100vh;
             width: 100vw;
-            margin:0 auto;
+            margin: 0 auto;
             /* border:2px solid red; */
-            display:grid;
-            grid-template-columns:1fr 2fr;
-            gap:20px;
+            display: grid;
+            grid-template-columns: 1fr 2fr;
+            gap: 20px;
         }
-        .image{
-             /* border:2px solid red; */
+
+        .image {
+            /* border:2px solid red; */
         }
-        img{
+
+        img {
             height: 100%;
         }
-        .text{
+
+        .text {
             /* border:2px solid red; */
         }
-        /* .first , .last {
-            display: flex;
-            height: 50%;
-            border:2px solid red;
-        }
-        img{
-            height:50vh;
-            width:30vw;
-            border:2px solid red;
-        } */
+
         button {
             background-color: deepskyblue;
         }
 
         @media screen and (max-width:680px) {
 
-            .container{
-                grid-template-columns: repeat(1,1fr);
+            .container {
+                grid-template-columns: repeat(1, 1fr);
                 justify-content: center;
                 align-items: center;
             }
-            img{
-                width:100%;
+
+            img {
+                width: 100%;
             }
-            .text{
+
+            .text {
                 width: 100%;
             }
         }
@@ -61,8 +56,101 @@
 
     <div class="container">
 
+        <div class="image">
+            <img src="burger.jpeg" alt="">
+        </div>
+
+        <div class="text">
+
+            <h3>What yoy will do</h3>
+            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Delectus, tenetur perspiciatis? Tenetur,
+                nam,
+                velit libero tempora sequi possimus aut numquam molestiae voluptatem eaque at provident animi
+                expedita
+                pariatur necessitatibus eos?
+            </p>
+            <button>Read More</button>
+
+        </div>
+
+
+        <div class="image">
+            <img src="chicken.jpeg" alt="">
+        </div>
+        <div class="text">
+            <h3>I will ear chicken</h3>
+            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Delectus, tenetur perspiciatis? Tenetur,
+                nam,
+                velit libero tempora sequi possimus aut numquam molestiae voluptatem eaque at provident animi
+                expedita
+                pariatur necessitatibus eos?
+            </p>
+            <button>Read More</button>
+        </div>
+    </div>
+
+</body>
+
+</html> -->
+
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+
+          .container{
+            height: 100vh;
+            display: flex;
+            flex-direction: column;
+            /* border:2px solid black; */
+          }
+          .box1,.box2{
+            flex:1;
+            display: flex;
+            border-radius: 5px;
+            /* border:2px solid black; */
+          }
+
+          .image{
+            /* border:2px solid black; */
+            flex:1;
+          }
+          .image img{
+            width:100%;
+          }
+          .text{
+            flex:2;
+            padding:13px;
+            
+
+            /* border:2px solid black; */
+          }
+
+
+          @media  screen and (max-width:580px) {
+            .img,.text{
+                width:100%;
+            }
+            .box{
+                flex-direction: column;
+            }
+          }
+
+    </style>
+</head>
+
+<body>
+    <div class="container">
+
+        <div class="box box1">
             <div class="image">
-                <img src="burger.jpeg" alt="">
+                <img src="chicken.jpeg" alt="">
             </div>
 
             <div class="text">
@@ -72,14 +160,17 @@
                     nam,
                     velit libero tempora sequi possimus aut numquam molestiae voluptatem eaque at provident animi
                     expedita
-                    pariatur necessitatibus eos?</p>
+                    pariatur necessitatibus eos?
+                </p>
                 <button>Read More</button>
 
             </div>
+        </div>
 
 
+        <div class="box box2">
             <div class="image">
-                <img src="chicken.jpeg" alt="">
+                <img src="dinner.webp" alt="">
             </div>
             <div class="text">
                 <h3>I will ear chicken</h3>
@@ -87,9 +178,11 @@
                     nam,
                     velit libero tempora sequi possimus aut numquam molestiae voluptatem eaque at provident animi
                     expedita
-                    pariatur necessitatibus eos?</p>
+                    pariatur necessitatibus eos?
+                </p>
                 <button>Read More</button>
             </div>
+        </div>
     </div>
 
 </body>
