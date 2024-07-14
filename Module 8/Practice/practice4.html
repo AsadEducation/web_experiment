@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Design Layout</title>
+
+    <style>
+
+        .container{
+            height: 100vh;
+            width: 100vw;
+            margin:0 auto;
+            /* border:2px solid red; */
+            display:grid;
+            grid-template-columns:1fr 2fr;
+            gap:20px;
+        }
+        .image{
+             /* border:2px solid red; */
+        }
+        img{
+            height: 100%;
+        }
+        .text{
+            /* border:2px solid red; */
+        }
+        /* .first , .last {
+            display: flex;
+            height: 50%;
+            border:2px solid red;
+        }
+        img{
+            height:50vh;
+            width:30vw;
+            border:2px solid red;
+        } */
+        button {
+            background-color: deepskyblue;
+        }
+
+        @media screen and (max-width:680px) {
+
+            .container{
+                grid-template-columns: repeat(1,1fr);
+                justify-content: center;
+                align-items: center;
+            }
+            img{
+                width:100%;
+            }
+            .text{
+                width: 100%;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="container">
+
+            <div class="image">
+                <img src="burger.jpeg" alt="">
+            </div>
+
+            <div class="text">
+
+                <h3>What yoy will do</h3>
+                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Delectus, tenetur perspiciatis? Tenetur,
+                    nam,
+                    velit libero tempora sequi possimus aut numquam molestiae voluptatem eaque at provident animi
+                    expedita
+                    pariatur necessitatibus eos?</p>
+                <button>Read More</button>
+
+            </div>
+
+
+            <div class="image">
+                <img src="chicken.jpeg" alt="">
+            </div>
+            <div class="text">
+                <h3>I will ear chicken</h3>
+                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Delectus, tenetur perspiciatis? Tenetur,
+                    nam,
+                    velit libero tempora sequi possimus aut numquam molestiae voluptatem eaque at provident animi
+                    expedita
+                    pariatur necessitatibus eos?</p>
+                <button>Read More</button>
+            </div>
+    </div>
+
+</body>
+
+</html>
